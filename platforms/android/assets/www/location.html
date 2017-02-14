@@ -1,0 +1,38 @@
+<div id="locationPage" data-role="page">
+    <div class="iosHeader"></div>
+    <div id="header" data-role="header">
+        <div class="menuIcon">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="backBtn"><i class="backBtnIco fa fa-angle-left fa-2x"></i><span class="super">Back</span></div>
+        <div class="headerTitle">Location <span id="welcomeName"></span></div>
+        <div class="legendBtn">
+            <i class="fa fa-info-circle fa-2x"></i>
+        </div>
+    </div>
+    <div id="legendModal" class="modal fade" role="dialog">
+        <img src="img/legend.png"/>
+    </div>
+    <div class="employeeContent">
+        <div id="branchLocation">
+            <span class="filterTitle">Branch</span>
+            <div id="branchOptionLocation_div" class="filterSelect selectpicker">
+                <div class="compRender"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="dateDiv">
+            <span class="filterTitle">Date</span>
+            <div id="branchOption_div" class="filterSelect selectpicker">
+                <input id="trackDate" name="date" type="date" value="" />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="employeeMap"></div>
+        <div id="employeeList">
+            <ul id="employeeListing">
+                
+            </ul>
+        </div>
+    </div>
+</div>

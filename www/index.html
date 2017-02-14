@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/loading.css">
+        <title>App Tracker</title>
+    </head>
+    <body>
+		<div data-role="panel" id="sideMenu" data-display="overlay" data-position-fixed="true" data-theme="a">
+			<div id="profilePic">
+				<img class="profilePicImg" src="img/icon-user-default.png" />
+				<div id="userNameDisp"></div>
+			</div>
+			<div class="sideBarMenuGroup">
+				<ul>
+					<li id="toDoListSB" class="sideBarMenus">
+						<i class="sideBarIco fa fa-users fa-2x"></i>
+						<span class="sideBarTitle">Employee list</span>
+					</li>
+                    <li id="locationSB" class="sideBarMenus">
+						<i class="sideBarIco fa fa-globe fa-2x"></i>
+						<span class="sideBarTitle">Location</span>
+					</li>
+					<li id="profileSB" class="sideBarMenus">
+						<i class="sideBarIco fa fa-user fa-2x"></i>
+						<span class="sideBarTitle">Profile</span>
+					</li>
+					<li id="aboutSB" class="sideBarMenus">
+						<i class="sideBarIco fa fa-info fa-2x"></i>
+						<span class="sideBarTitle">About this app</span>
+					</li>
+					<li id="logoutSB" class="sideBarMenus">
+						<i class="sideBarIco fa fa-sign-in fa-2x"></i>
+						<span class="sideBarTitle">Logout</span>
+					</li>
+					<li id="closeSB" class="sideBarMenus">
+						<i class="sideBarIco fa fa-times fa-2x"></i>
+						<span class="sideBarTitle">Close</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="mainModal" class="modal fade" role="dialog"></div>
+		<div id="loadingModal" class="modal fade" role="dialog">
+			<div class="kart-loader">
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+				<div class="sheath">
+						<div class="segment"></div>
+				</div>
+			</div>
+		</div>
+		<div id="loginPage" data-role="page">
+			<div class="loginForm">
+				<div id="logo"><img src="img/logoMitsuiWhite.png"/></div>
+			</div>
+			<div id="loginFormDiv">
+				<form id="loginForm">
+					<input type="text" id="userName" name="name" class="fullWinput" placeholder="Username"/>
+					<hr/>
+					<input type="password" id="password" class="fullWinput" placeholder="Password"/>
+					
+					<div id="login" class="bigBtn">Login</div>
+				</form>
+			</div>
+		</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuf2l-TTekZEbAVmlz8HMdmqHcrm85Fdc"type="text/javascript"></script>
+		<script type="text/javascript" src="js/sha1.js"></script>
+		<script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/properties.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+			window.onerror = function(msg, url, linenumber) {
+				alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+				return true;
+			}
+		</script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
